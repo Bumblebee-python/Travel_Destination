@@ -3,10 +3,8 @@ from datetime import datetime
 from home.models import contact
 # Create your views here.
 def index(request):
-    context = {
-        "variable":"this is sent"
-    }
-    return render(request, 'index.html', context )
+  
+    return render(request, 'index.html', )
    # return HttpResponse("this is homepage")  
 
 def about(request):

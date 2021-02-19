@@ -1,3 +1,7 @@
+{% load static %}
+        <link rel="stylesheet" href = "{% static 'hower.css' %}"> 
+       
+        
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,9 +15,14 @@
     <title>{% block title  %}{% endblock title %} |GHUMISTAAN</title>
   </head>
   <body>
+  	<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+    
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">GHUMISTAAN</a>
+    <a href="index.html">
+									Travel<span>Duniya</span>
+								</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,22 +32,21 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">ABOUT US</a>
+          <a class="nav-link" aria-current="page" href="/about">About Us</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            SERVICES
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/services">LOCAL GUIDE</a></li>
-            <li><a class="dropdown-item" href="#">PICKUP SERVICES</a></li>
-            <li><a class="dropdown-item" href="#">RENTAL VEHICLES</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">ACTIVTIES</a></li>
-          </ul>
+         <li class="nav-item dropdown">
+          <div class="dropdown">
+  <button class="dropbtn">Services</button>
+  <div class="dropdown-content">
+    <a href="#">Packages</a>
+    <a href="#">Hotels</a>
+    <a href="#">Agents</a>
+  </div>
+</div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contact">CONTACT US</a>
+          <a class="nav-link" aria-current="page" href="/contact">Contact Us</a>
         </li>
         
       </ul>
@@ -49,6 +57,9 @@
     </div>
   </div>
 </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </body>
 {% block body %}{% endblock body %}
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -62,4 +73,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
   </body>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'footer.css' %}">
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Travel Dunia © 2021</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
 </html>
