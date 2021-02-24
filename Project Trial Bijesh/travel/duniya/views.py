@@ -1,4 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
@@ -13,8 +14,8 @@ def about(request):
 def contact(request):
    return render(request, 'contact.html')
 
-def signlog(request):
-   return render(request, 'signlog.html')
+def signin(request):
+   return render(request, 'signin.html')
 
     #def services(request):
    # return render(request, 'services.html')
