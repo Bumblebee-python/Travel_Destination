@@ -102,3 +102,42 @@ def blog_inner(request):
 
 def discount(request):
     return render(request,'discount.html')
+
+def 404(request):
+    return render(request,'404.html')
+
+def db_all_payment(request):
+    return render(request,'db_all_payment.html')
+
+def db_event_booking(request):
+    return render(request,'db_event_booking.html')
+
+def db_event_details(request):
+    return render(request,'db_event_details.html')
+
+def db_hotel_booking(request):
+    return render(request,'db_hotel_booking.html')
+
+def db_hotel_details(request):
+    return render(request,'db_hotel_details.html')
+
+def db_my_profile_edit(request):
+    return render(request,'db_my_profile_edit.html')
+
+def db_my_profile(request):
+    return render(request,'db_my_profile.html')
+
+def db_payment(request):
+    return render(request,'db_payment.html')
+
+def db_refund(request):
+    return render(request,'db_refund.html')
+
+
+def db_travel_booking(request):
+    return render(request,'db_travel_booking.html')
+
+def db_travel_details(request):
+    return render(request,'db_travel_details.html')
+
+
