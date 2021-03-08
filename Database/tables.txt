@@ -1,0 +1,121 @@
+1. tbl_user_mst
+-------------------
+user_id
+user_type
+user_name
+user_email
+user_contact
+user_password
+
+2. tbl_hotel_mst
+-------------------
+hotel_id
+hotel_name
+hotel_password
+hotel_price
+hotel_email
+hotel_contact
+hotel_address
+hotel_rooms_avail
+state_id  (fk)
+city_id   (fk)
+
+3.tbl_agency_mst
+-------------------
+agency_id
+agency_name
+agency_password
+agency_price
+agency_email
+agency_contact
+agency_address
+agency_guides
+agency_guides_avail
+state_id   (fk)
+city_id    (fk)
+
+4.tbl_booking_mst
+-------------------
+booking_id
+user_id    (fk)
+hotel_id    (fk)
+agency_id    (fk)
+package_id    (fk)
+booking_date
+state_id   (fk)
+city_id    (fk)
+
+5.tbl_package_mst
+-------------------
+package_id
+pacakge_price
+hotel_id	(fk)
+agency_id	(fk)
+
+6.tbl_payment_mst
+-------------------
+payment_id
+payment_amount
+payment_mode
+payment_status
+booking_id	(fk)
+user_id		(fk)
+
+7.tbl_complaint_mst
+-------------------
+complaint_id
+complaint_detail
+complaint_status
+booking_id	(fk)
+user_id		(fk)
+
+8.tbl_feedback_mst
+-------------------
+feedback_id
+feedback_detail
+user_id		(fk)
+
+9.tbl_state
+-------------------
+state_id
+state_name
+
+10.tbl_city
+-------------------
+city_id
+city_name
+state_id	(fk)
+
+
+
+Agencies:
+
+Just4u Tours & Travels Pvt Ltd
+4.9
+Tour agency in Kota, Rajasthan
+Address: Shop No 128, 1st Floor District Centre, Jawahar Nagar Main Road, Jawahar Nagar, Kota, Rajasthan 324005
+Phone: 08440000888
+
+GET SET GO TRAVELS
+4.8
+Tour agency in Visakhapatnam, Andhra Pradesh
+Address: Waltair Station Approach Road, Telugu Talli Flyover Opposit to DRM Office,, AT Lobby Level Hotel Akshaya, Visakhapatnam, Andhra Pradesh 530016
+Phone: 09246814399
+
+Cozy Tour & Travels
+4.3
+Tour agency in Guwahati, Assam
+Address: 31, Tayebullah Campus, Tayabulla Rd, Dighalipukhuri, Guwahati, Assam 781001
+Phone: 08448444094
+
+Goa Tours & Travels
+4.1
+Travel agency in Panaji, Goa
+Address: Shop No 5, Crisabol Plaza, Bharat Petrol Pump, Nr. KTC Bus Stand, Panaji, Goa 403001
+Phone: 08322904223
+
+Shirgul Travels Co Shimla
+4.9
+Travel agency in Shimla, Himachal Pradesh
+Address: Manali, Road, near Hotel Moon Light , Power House, Totu, Shimla, Himachal Pradesh 171011
+Phone: 09816765577
