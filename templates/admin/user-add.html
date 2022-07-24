@@ -1,0 +1,67 @@
+{%extends 'admin/base.html'%}
+
+{%block body%}
+
+
+
+<body>
+{%load static%}
+  
+
+ 
+                      <div class="sb2-2">
+                <div class="sb2-2-2">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li class="active-bre"><a href="#"> Add User</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sb2-2-add-blog sb2-2-1">
+                    <h2>Add User Details</h2>
+                  
+                  
+                    
+
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="box-inn-sp">
+                                
+                                <div class="bor">
+                                    <form method="post" action='/hotel_add_process'>
+                                        <div class="row">
+                                          {% csrf_token %}
+                                            <div class="input-field col s12">
+                                                <input id="list-title" placeholder="Name" name="txt1" type="text" class="validate">
+                                                <label for="list-title"> </label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title" placeholder="Password" name="userpassword" type="text" class="validate">
+                                                <label for="list-title"></label>
+                                            </div>
+                                           <!-- <div class="input-field col s12">
+                                                <input id="list-title" type="text" name="hotelprice" class="validate">
+                                                <label for="list-title">Price</label>
+                                           </div>
+                                                  -->
+                                         </div>
+                                  
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input type="submit" class="waves-effect waves-light btn-large" value="Submit">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+ 
+
+{% endblock body %}

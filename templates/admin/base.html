@@ -1,0 +1,199 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{%load static%}
+    <title>Travel Duniya Admin Panel</title>
+    <!--== META TAGS ==-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--== FAV ICON ==-->
+    <link rel="shortcut icon" href="{% static 'images/fav.ico' %}">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Quicksand:300,400,500" rel="stylesheet">
+
+    <!-- FONT-AWESOME ICON CSS -->
+    <link rel="stylesheet" href="{% static 'admin/css/font-awesome.min.css' %}">
+
+    <!--== ALL CSS FILES ==-->
+    <link rel="stylesheet" href="{% static 'admin/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'admin/css/mob.css' %}">
+    <link rel="stylesheet" href="{% static 'admin/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'admin/css/materialize.css' %}" />
+
+    <!-- HTML5 Shim and Respond.js' %} IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js' %} doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="{% static 'js/html5shiv.js' %}"></script>
+	<script src="{% static 'js/respond.min.js' %}"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <!--== MAIN CONTRAINER ==-->
+    <div class="container-fluid sb1">
+        <div class="row">
+            <!--== LOGO ==-->
+            <div class="col-md-2 col-sm-3 col-xs-6 sb1-1">
+                <a href="#" class="btn-close-menu"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="#" class="atab-menu"><i class="fa fa-bars tab-menu" aria-hidden="true"></i></a>
+                 <a href="/index " class="logo"><img src="{% static 'images/logo.png' %}" alt="" />
+                </a>
+            </div>
+            <!--== SEARCH ==-->
+            <div class="col-md-6 col-sm-6 mob-hide">
+                <form class="app-search">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <a href=""><i class="fa fa-search"></i></a>
+                </form>
+            </div>
+           
+            <!--== MY ACCCOUNT ==-->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <!-- Dropdown Trigger -->
+                <a class='waves-effect dropdown-button top-user-pro' href='#' data-activates='top-menu'><img src="{% static 'images/user/6.png' %}" alt="" />My Account <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+
+                <!-- Dropdown Structure -->
+                <ul id='top-menu' class='dropdown-content top-menu-sty'>
+                   
+                    <li class="divider"></li>
+                    <li><a href="#" class="ho-dr-con-last waves-effect"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--== BODY CONTNAINER ==-->
+    <div class="container-fluid sb2">
+        <div class="row">
+            <div class="sb2-1">
+                <!--== USER INFO ==-->
+                
+                <!--== LEFT MENU ==-->
+
+                 <div class="sb2-13">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li><a href="/index" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a>
+                        </li>
+
+                        <li> <a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-h-square" aria-hidden="true"></i> Hotels</a>
+                            <div class="collapsible-body left-sub-menu">
+                                <ul>
+                                    <li> <a href="/hotel_all ">All Hotels</a>
+                                    </li>
+                                    <li> <a href="/hotel_add ">Add New Hotel</a>
+                                    </li>
+                                    <li> <a href="/hotel_room-type-all ">Room Type</a>
+                                    </li>
+                                    <li> <a href="/hotel_room_type_add ">Add Room Type</a>
+                                    </li>
+                                </ul>
+                         </div>
+                        </li>
+                        <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-user" aria-hidden="true"></i> Users</a>
+                            <div class="collapsible-body left-sub-menu">
+                                <ul>
+                                    <li><a href="/user_all">All Users</a>
+                                    </li>
+                                    <li><a href="/user_add">Add New user</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-umbrella" aria-hidden="true"></i> Tour Packages</a>
+                            <div class="collapsible-body left-sub-menu">
+                                <ul>
+                                    <li> <a href="/package_all ">All Packages</a>
+                                    </li>
+                                    <li> <a href="/package_add ">Add New Package</a>
+                                    </li>
+                                    <li> <a href="/package_cat_all ">All Package Categories</a>
+                                    </li>
+                                    <li> <a href="/package_cat_add ">Add Package Categories</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                      <li> <a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-h-square" aria-hidden="true"></i> Agencies</a>
+                            <div class="collapsible-body left-sub-menu">
+                                <ul>
+                                    <li> <a href="/hotel_all ">All Hotels</a>
+                                    </li>
+                                    <li> <a href="/hotel_add ">Add New Agency</a>
+                                    </li>
+                                    <li> <a href="/hotel_room-type-all ">Driver Details</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                         
+                        
+                     
+                        
+                        
+                        <li> <a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-ticket" aria-hidden="true"></i> Booking & Enquiry</a>
+                            <div class="collapsible-body left-sub-menu">
+                                <ul>
+                                    <li> <a href="/hotel_booking-all ">Hotel</a>
+                                    </li>
+                                    <li> <a href="/package_booking_all ">Package</a>
+                                    </li>
+                                  
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        
+                        <li> <a href="/login " target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+     
+               
+
+{% block body %} 
+ {% endblock  %}
+
+
+
+
+    <!--== BOTTOM FLOAT ICON ==-->
+    <section>
+        <div class="fixed-action-btn vertical">
+            <a class="btn-floating btn-large red pulse">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a>
+                </li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a>
+                </li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a>
+                </li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--======== SCRIPT FILES =========-->
+    <script src="{% static 'admin/js/jquery.min.js' %}"></script>
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+    <script src="{% static 'admin/js/bootstrap.min.js' %}"></script>
+     <script src="{% static 'admin/js/materialize.min.js' %}"></script>
+    <script src="{% static 'admin/js/custom.js' %}"></script>
+</body>

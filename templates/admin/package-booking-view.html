@@ -1,0 +1,100 @@
+{%extends 'base.html'%}
+
+{%block body%}
+
+
+
+<body>
+{%load static%}
+   
+            <div class="sb2-2">
+                <div class="sb2-2-2">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li class="active-bre"><a href="#"> Enquiry: Tour Package</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sb2-2-1">
+                    <div class="inn-title">
+                        <h4>Enquiry: Tour Package</h4>
+                        <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
+                    </div>
+                    <div class="bor">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Hotel Name :</td>
+                                    <td>Doe</td>
+                                </tr>
+                                <tr>
+                                    <td>Start Date :</td>
+                                    <td>12 mar, 2017</td>
+                                </tr>
+                                <tr>
+                                    <td>End Date :</td>
+                                    <td>12 mar, 2017</td>
+                                </tr>
+                                <tr>
+                                    <td>User Name</td>
+                                    <td>John Mathive</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td>+01 32145 45678</td>
+                                </tr>
+                                <tr>
+                                    <td>Email id</td>
+                                    <td>my test@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>Chennai</td>
+                                </tr>
+                                <tr>
+                                    <td>Adults</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Childrens</td>
+                                    <td>6</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--== BOTTOM FLOAT ICON ==-->
+    <section>
+        <div class="fixed-action-btn vertical">
+            <a class="btn-floating btn-large red pulse">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a>
+                </li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a>
+                </li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a>
+                </li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--======== SCRIPT FILES =========-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
+
+{% endblock body %}

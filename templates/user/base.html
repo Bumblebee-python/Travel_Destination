@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{%load static%}
+    <title>Travel Duniya</title>
+    <!--== META TAGS ==-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="{% static 'images/fav.ico' %}">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:400,500,700" rel="stylesheet">
+    <!-- FONT-AWESOME ICON CSS -->
+    <link rel="stylesheet" href="{% static 'user/css/font-awesome.min.css' %}">
+    <!--== ALL CSS FILES ==-->
+    <link rel="stylesheet" href="{% static 'user/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/materialize.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/mob.css' %}">
+    <link rel="stylesheet" href="{% static 'user/css/animate.css' %}">
+    <!-- HTML5 Shim and Respond.js' %} IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js' %} doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="{% static 'js/html5shiv.js' %}"></script>
+	<script src="{% static 'jsrespond.min.js' %}"></script>
+	<![endif]-->
+</head>
+
+<body>
+{%load static%}
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <section>
+        <div class="ed-mob-menu">
+            <div class="ed-mob-menu-con">
+                <div class="ed-mm-left">
+                    <div class="wed-logo">
+                        <a href="/"><img src="{% static 'images/logo.png' %}" alt="" />
+						</a>
+                    </div>
+                </div>
+                <div class="ed-mm-right">
+                    <div class="ed-mm-menu">
+                        <a href="#!" class="ed-micon"><i class="fa fa-bars"></i></a>
+                        <div class="ed-mm-inn">
+                            <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
+                            <h4>Search Here</h4>
+                            <ul>
+                                <li><a href="/booking_all">Search Booking</a></li>
+                                
+                                <li><a href="/booking_tour_package">Search Tour</a></li>
+                                <li><a href="/booking_hotel">Search Hotel</a></li>
+                                <li><a href="/booking_agency">Search Agency</a></li>
+                                
+                            </ul>
+                            <h4>Tour Packages</h4>
+                            <ul>
+                                <li><a href="/all_package">All Package</a></li><li>
+                                
+                                <li><a href="/custom_package">Custom Package</a></li>
+                            </ul>
+                            <!--
+                                 EXTRAAAAAAAAA
+                                <h4>Sighe Seeings Pages</h4>
+                            <ul>
+                                <li><a href="places ">Seight Seeing 1</a></li>
+                                <li><a href="places-1 ">Seight Seeing 2</a></li>
+                                <li><a href="places-2 ">Seight Seeing 3</a></li>
+                            </ul> -->
+
+                            <h4>User Dashboard</h4>
+                            <ul>
+                                <li><a href="/dashboard">My Bookings</a></li>
+                                <li><a href="/db_my_profile">My Profile</a></li>
+                                <li><a href="/db-my-profile-edit">My Profile edit</a></li>
+                                <li><a href="db-travel-booking">Tour Packages</a></li>
+                                <li><a href="/db_hotel_booking">Hotel Bookings</a></li>
+                                <li><a href="/db_payment">Make Payment</a></li>
+                                <li><a href="/db_refund">Cancel Bookings</a></li>
+                                <li><a href="/db_hotel_details">Hotel booking details</a></li>
+                                <li><a href="/db_travel_details">Travel booking details</a></li>
+                            </ul>
+                            <h4>Other pages:1</h4>
+                            <ul>
+                                <li><a href="/tour_details">Travel details</a></li>
+                                <li><a href="/hotel_details">Hotel details</a></li>
+                                <li><a href="/all_package">All Package</a></li><li><a href="/hotels_list">All hotels</a></li>
+                                <li><a href="/booking">Booking Page</a></li>
+                            </ul>
+                            <h4 class="ed-dr-men-mar-top">Account</h4>
+                            <ul>
+                                <li><a href="/register">Register</a></li>
+                                <li><a href="/login">Login and Sign in</a></li>
+                                <li><a href="/forgot_pass">Forgot pass</a></li>
+                            </ul>
+                            <h4>Other pages:2</h4>
+                            <ul>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/testimonials">Customer Reviews</a></li>
+                                <li><a href="/tips">Tips Before Travel</a></li>
+                                <li><a href="/price_list">Price List</a></li>
+                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/404">404 Page</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--HEADER SECTION-->
+    <section>
+        <!-- TOP BAR -->
+        <div class="ed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ed-com-t1-left">
+                          <!--
+                            <ul>
+                                <li><a href="#">Contact: Lake Road, Suite 180 Farmington Hills, U.S.A.</a>
+                                </li>
+                                <li><a href="#">Phone: +101-1231-1231</a>
+                                </li>
+                            </ul>
+                            -->
+                        </div>
+                        <div class="ed-com-t1-right">
+                            <ul>
+                                <li><a href="/login">Sign In</a>
+                                </li>
+                                <li><a href="/register">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                       <!--
+                        <div class="ed-com-t1-social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGO AND MENU SECTION -->
+        <div class="top-logo" data-spy="affix" data-offset-top="250">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wed-logo">
+                            <a href="/"><img src="{% static 'images/logo.png' %}" alt="" />
+                            </a>
+                        </div>
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="/">Home</a>
+                                </li>
+                                <li><a href="/user-package-list">Packages</a></li>
+                             
+                                <li><a href="/user-hotel-list">Hotel</a></li>
+                                <li><a href="/user-agency-list">Agency</a></li>
+                                <!--<li><a class='dropdown-button ed-sub-menu' href='#' data-activates='dropdown1'>Courses</a></li>-->
+                           
+                                </li>
+                                
+                                 <li><a href="/about">About us</a>
+                                </li>
+                                <li><a href="/contact">Contact us</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<!-- TOP SEARCH BOX -->
+        <div class="search-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="search-form">
+						<form class="tourz-search-form" action="/user-package-list">
+							<div class="input-field">
+								<input type="text" id="select-city" class="autocomplete">
+								<label for="select-city">Enter city</label>
+							</div>
+							<div class="input-field">
+								<input type="text" id="select-search" class="autocomplete">
+								<label for="select-search" class="search-hotel-type">Search over a million tour and travels, sight seeings, hotels and more</label>
+							</div>
+							<div class="input-field">
+								<input type="submit" value="search" class="waves-effect waves-light tourz-sear-btn"> </div>
+						</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- END TOP SEARCH BOX -->
+    </section>
+    <!--END HEADER SECTION-->
+
+    {% block body %}{% endblock body %}
+
+       <!--====== TIPS BEFORE TRAVEL ==========-->
+    <section>
+        <div class="rows tips tips-home tb-space home_title">
+            <div class="container tips_1">
+                <!-- TIPS BEFORE TRAVEL -->
+                
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h3>Tips Before Travel</h3>
+                    <div class="tips_left tips_left_1">
+                        <h5>Carry Hand Sanitizer and Toilet Paper</h5>
+                        <p>It is a good idea to carry these around with you, as they are rarely found in public washrooms.</p>
+                    </div>
+                    <div class="tips_left tips_left_2">
+                        <h5> Don’t Forget Travel Insurance</h5>
+                        <p> Some insurance policies will cover you for theft, lost luggage, cancellations and anything else that can go wrong during your trip. This will give you peace of mind knowing that no matter what happens you will be taken care of.</p>
+                    </div>
+                    <div class="tips_left tips_left_3">
+                        <h5>Always have some cash</h5>
+                        <p>Online payment is not available everywhere so it's good to caary some cash.</p>
+                    </div>
+                </div>
+                <!-- CUSTOMER TESTIMONIALS -->
+                <div class="col-md-8 col-sm-6 col-xs-12 testi-2">
+                    <!-- TESTIMONIAL TITLE -->
+                    <h3>Customer Testimonials</h3>
+                    <div class="testi">
+                        <h4>Sarvesh Pansari</h4>
+                        <p>It was a great experience. Recommended.</p> <address>Block no. 2, flat 69, backbone colony,Surat</address> </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <!--====== FOOTER 1 ==========-->
+    <section>
+        <div class="rows">
+            <div class="footer1 home_title tb-space">
+                <div class="pla1 container">
+                    <!-- FOOTER OFFER 1 -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="disco">
+                            <h4>Udaipur</h4>
+                         <a href="/booking">Book Now</a> </div>
+                    </div>
+                    <!-- FOOTER OFFER 2 -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="disco1 disco">
+                           
+                            <h4>Manali</h4>
+                         <a href="/booking">Book Now</a> </div>
+                    </div>
+                    <!-- FOOTER MOST POPULAR VACATIONS -->
+                    <div class="col-md-6 col-sm-12 col-xs-12 foot-spec footer_places">
+                        <h4><span>Most Popular</span> Vacations</h4>
+                        <ul>
+                            <li><a href="/tour_details">Manali</a> </li>
+                            <li><a href="/tour_details">Udaipur</a> </li>
+                            <li><a href="/tour_details">Srinagar</a> </li>
+                            <li><a href="/tour_details">Goa</a> </li>
+                            <li><a href="/tour_details">Jaisalmer </a> </li>
+                            <li><a href="/tour_details">Jaipur</a> </li>
+                            <li><a href="/tour_details">Mussoorie</a> </li>
+                            <li><a href="/tour_details">Shimla</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== FOOTER 2 ==========-->
+    <section>
+        <div class="rows">
+            <div class="footer">
+                <div class="container">
+                    <div class="foot-sec2">
+                        <div>
+                            <div class="row">
+                                <div class="col-sm-3 foot-spec foot-com">
+                                    <h4><span>Holiday</span> Tour & Travels</h4>
+                                    <p>World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+                                </div>
+                                <div class="col-sm-3 foot-spec foot-com">
+                                    <h4><span>Address</span> & Contact Info</h4>
+                                    <p>Crossword, CG road, Ahmedabad, Gujarat</p>
+                                    <p> <span class="strong">Phone: </span> <span class="highlighted">+91 1234512345</span> </p>
+                                </div>
+                                <div class="col-sm-3 col-md-3 foot-spec foot-com">
+                                    <h4><span>SUPPORT</span> & HELP</h4>
+                                    <ul class="two-columns">
+                                        <li> <a href="#">About Us</a> </li>
+                                        <li> <a href="#">FAQ</a> </li>
+                                        <li> <a href="#">Feedbacks</a> </li>
+                                        <li> <a href="#">Vacations</a> </li>
+                                        <li> <a href="#">Contact Us</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== FOOTER - COPYRIGHT ==========-->
+    
+    <section>
+        <div class="rows copy">
+            <div class="container">
+                <p>Copyrights © 2021 Travel duniya. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+    <script src="{% static 'user/js/jquery-latest.min.js' %}"></script>
+    <script src="{% static 'user/js/bootstrap.js' %}"></script>
+    <script src="{% static 'user/js/wow.min.js' %}"></script>
+    <script src="{% static 'user/js/materialize.min.js' %}"></script>
+    <script src="{% static 'user/js/custom.js' %}"></script>
+</body>
+
+</html>

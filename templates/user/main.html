@@ -1,0 +1,394 @@
+{% extends 'user/base.html ' %}
+
+
+
+
+{% block body %}
+
+ {% load static %}
+
+    <!--HEADER SECTION-->
+    <section>
+        <div class="tourz-search">
+            <div class="container">
+                <div class="row">
+                    <div class="tourz-search-1">
+                        <h1>Plan Your Travel Now!</h1>
+                        <p>Experience the various exciting tour and travel packages and Make hotel reservations, find vacation packages, search cheap hotels and events</p>
+                        <form class="tourz-search-form">
+                            <div class="input-field">
+                                <input type="text" id="select-city" class="autocomplete">
+                                <label for="select-city">Enter city</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="select-search" class="autocomplete">
+                                <label for="select-search" class="search-hotel-type">Search over a million tour and travels, sight seeings, hotels and more</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="submit" value="search" class="waves-effect waves-light tourz-sear-btn"> </div>
+                        </form>
+                        <div class="tourz-hom-ser">
+                            <ul>
+                                <li>
+                                    <a href="booking-tour-package " class="waves-effect waves-light btn-large tourz-pop-ser-btn wow fadeInUp" data-wow-duration="0.5s"><img src="{% static 'images/icon/2.png' %}" alt=""> Tour</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="booking-hotel " class="waves-effect waves-light btn-large tourz-pop-ser-btn wow fadeInUp" data-wow-duration="2s"><img src="{% static 'images/icon/1.png' %}" alt=""> Hotel</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END HEADER SECTION-->
+
+    <section>
+        <div class="rows pad-bot-redu tb-space">
+            <div class="container">
+                <!-- TITLE & DESCRIPTION -->
+                <div class="spe-title">
+                    <h2>Top <span>Tour Packages</span></h2>
+                    <div class="title-line">
+                        <div class="tl-1"></div>
+                        <div class="tl-2"></div>
+                        <div class="tl-3"></div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <!-- TOUR PLACE 1 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow slideInUp" data-wow-duration="0.5s">
+                        <!-- OFFER BRAND -->
+                        
+                        <!-- IMAGE -->
+                        <div class="v_place_img"> <img src="{% static 'images/t5.png' %}" alt="Tour Booking" title="Tour Booking" /> </div>
+                        <!-- TOUR TITLE & ICONS -->
+                        <div class="b_pack rows">
+                            <!-- TOUR TITLE -->
+                            <div class="col-md-8 col-sm-8">
+                                <h4><a href="tour-details ">RAJASTHAN<span class="v_pl_name"></span></a></h4>
+                            </div>
+                            <!-- TOUR ICONS -->
+                            <div class="col-md-4 col-sm-4 pack_icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/clock.png' %}" alt="Date" title="Tour Timing" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/info.png' %}" alt="Details" title="View more details" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/price.png' %}" alt="Price" title="Price" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/map.png' %}" alt="Location" title="Location" /> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TOUR PLACE 2 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="0.7s">
+                        
+                        <!-- IMAGE -->
+                        <div class="v_place_img"> <img src="{% static 'images/t1.png' %}" alt="Tour Booking" title="Tour Booking" /> </div>
+                        <!-- TOUR TITLE & ICONS -->
+                        <div class="b_pack rows">
+                            <!-- TOUR TITLE -->
+                            <div class="col-md-8 col-sm-8">
+                                <h4><a href="tour-details ">KERALA<span class="v_pl_name"></span></a></h4>
+                            </div>
+                            <!-- TOUR ICONS -->
+                            <div class="col-md-4 col-sm-4 pack_icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/clock.png' %}" alt="Date" title="Tour Timing" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/info.png' %}" alt="Details" title="View more details" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/price.png' %}" alt="Price" title="Price" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/map.png' %}" alt="Location" title="Location" /> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TOUR PLACE 3 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="0.9s">
+                        <div class="v_place_img"><img src="{% static 'images/t2.png' %}" alt="Tour Booking" title="Tour Booking" /> </div>
+                        <div class="b_pack rows">
+                            <div class="col-md-8 col-sm-8">
+                                <h4><a href="tour-details ">HIMACHAL<span class="v_pl_name"></span></a></h4>
+                            </div>
+                            <div class="col-md-4 col-sm-4 pack_icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/clock.png' %}" alt="Date" title="Tour Timing" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/info.png' %}" alt="Details" title="View more details" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/price.png' %}" alt="Price" title="Price" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/map.png' %}" alt="Location" title="Location" /> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TOUR PLACE 4 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.1s">
+                        <div class="v_place_img"><img src="{% static 'images/t3.png' %}" alt="Tour Booking" title="Tour Booking" /> </div>
+                        <div class="b_pack rows">
+                            <div class="col-md-8 col-sm-8">
+                                <h4><a href="tour-details ">UTTRAKHAND<span class="v_pl_name"></span></a></h4>
+                            </div>
+                            <div class="col-md-4 col-sm-4 pack_icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/clock.png' %}" alt="Date" title="Tour Timing" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/info.png' %}" alt="Details" title="View more details" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/price.png' %}" alt="Price" title="Price" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/map.png' %}" alt="Location" title="Location" /> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TOUR PLACE 5 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.3s">
+                        <div class="v_place_img"><img src="{% static 'images/t4.png' %}" alt="Tour Booking" title="Tour Booking" /> </div>
+                        <div class="b_pack rows">
+                            <div class="col-md-8 col-sm-8">
+                                <h4><a href="tour-details ">ANDAMAN&NICOBAR<span class="v_pl_name"></span></a></h4>
+                            </div>
+                            <div class="col-md-4 col-sm-4 pack_icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/clock.png' %}" alt="Date" title="Tour Timing" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/info.png' %}" alt="Details" title="View more details" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/price.png' %}" alt="Price" title="Price" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/map.png' %}" alt="Location" title="Location" /> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TOUR PLACE 6 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 b_packages wow fadeInUp" data-wow-duration="1.5s">
+                        <div class="v_place_img"><img src="{% static 'images/t6.png' %}" alt="Tour Booking" title="Tour Booking" /> </div>
+                        <div class="b_pack rows">
+                            <div class="col-md-8 col-sm-8">
+                                <h4><a href="tour-details ">GOA<span class="v_pl_name"></span></a></h4>
+                            </div>
+                            <div class="col-md-4 col-sm-4 pack_icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/clock.png' %}" alt="Date" title="Tour Timing" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/info.png' %}" alt="Details" title="View more details" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/price.png' %}" alt="Price" title="Price" /> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="{% static 'images/map.png' %}" alt="Location" title="Location" /> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== HOME HOTELS ==========-->
+    <section>
+        <div class="rows tb-space pad-top-o pad-bot-redu">
+            <div class="container">
+                <!-- TITLE & DESCRIPTION -->
+                <div class="spe-title">
+                    <h2>Popular <span>Cities</span> </h2>
+                    <div class="title-line">
+                        <div class="tl-1"></div>
+                        <div class="tl-2"></div>
+                        <div class="tl-3"></div>
+                    </div>
+                   
+                </div>
+                <!-- CITY -->
+                <div class="col-md-6">
+                    <a href="tour-details ">
+                        <div class="tour-mig-like-com">
+                            <div class="tour-mig-lc-img"> <img src="{% static 'images/listing/home.jpg' %}" alt=""> </div>
+                            <div class="tour-mig-lc-con">
+                                <h5>MANALI</h5>
+                                <p><span>Packages</span> Starting from ₹5000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="tour-details ">
+                        <div class="tour-mig-like-com">
+                            <div class="tour-mig-lc-img"> <img src="{% static 'images/listing/home3.jpg' %}" alt=""> </div>
+                            <div class="tour-mig-lc-con tour-mig-lc-con2">
+                                <h5>JAIPUR</h5>
+                                <p>Starting from ₹4000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="tour-details ">
+                        <div class="tour-mig-like-com">
+                            <div class="tour-mig-lc-img"> <img src="{% static 'images/listing/home2.jpg' %}" alt=""> </div>
+                            <div class="tour-mig-lc-con tour-mig-lc-con2">
+                                <h5>UDAIPUR</h5>
+                                <p>Starting from ₹3000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="tour-details ">
+                        <div class="tour-mig-like-com">
+                            <div class="tour-mig-lc-img"> <img src="{% static 'images/listing/home1.jpg' %}" alt=""> </div>
+                            <div class="tour-mig-lc-con tour-mig-lc-con2">
+                                <h5>MUNNAR</h5>
+                                <p>Starting from ₹10000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="tour-details ">
+                        <div class="tour-mig-like-com">
+                            <div class="tour-mig-lc-img"> <img src="{% static 'images/listing/home4.jpg' %}" alt=""> </div>
+                            <div class="tour-mig-lc-con tour-mig-lc-con2">
+                                <h5>SRINAGAR</h5>
+                                <p>Starting from ₹5000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== HOME HOTELS ==========-->
+    <section>
+        <div class="rows tb-space pad-top-o pad-bot-redu">
+            <div class="container">
+                <!-- TITLE & DESCRIPTION -->
+                <div class="spe-title">
+                    <h2>Hotels <span>booking open now! </span> </h2>
+                    <div class="title-line">
+                        <div class="tl-1"></div>
+                        <div class="tl-2"></div>
+                        <div class="tl-3"></div>
+                    </div>
+                                </div>
+                <!-- HOTEL GRID -->
+                <div class="to-ho-hotel">
+                    <!-- HOTEL GRID -->
+                    <div class="col-md-4">
+                        <div class="to-ho-hotel-con">
+                            <div class="to-ho-hotel-con-1">
+                                <div class="hot-page2-hli-3"> <img src="{% static 'images/hci1.png' %}" alt=""> </div>
+                                 <img src="{% static 'images/hotels/1.jpg' %}" alt=""> </div>
+                            <div class="to-ho-hotel-con-23">
+                                <div class="to-ho-hotel-con-2">
+                                    <a href="hotel-details ">
+                                        <h4>Sun Park Resort, Manali</h4>
+                                    </a>
+                                </div>
+                                <div class="to-ho-hotel-con-3">
+                                    <ul>
+                                        <li>City: Naggar Rd, Aleo, Manali, Himachal Pradesh
+                                            <div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o"
+                                                    aria-hidden="true"></i> </div>
+                                        </li>
+                                        <li><span class="ho-hot-pri-dis">$720</span><span class="ho-hot-pri">₹4,014</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HOTEL GRID -->
+                    <div class="col-md-4">
+                        <div class="to-ho-hotel-con">
+                            <div class="to-ho-hotel-con-1">
+                                <div class="hot-page2-hli-3"> <img src="{% static 'images/hci1.png' %}" alt=""> </div>
+                                <img src="{% static 'images/hotels/2.jpg' %}" alt=""> </div>
+                            <div class="to-ho-hotel-con-23">
+                                <div class="to-ho-hotel-con-2">
+                                    <a href="hotel-details ">
+                                        <h4>Umaid Bhawan Hotel</h4>
+                                    </a>
+                                </div>
+                                <div class="to-ho-hotel-con-3">
+                                    <ul>
+                                        <li>City: Via Bank Road, Bani Park, Jaipur, Rajasthan
+                                            <div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o"
+                                                    aria-hidden="true"></i> </div>
+                                        </li>
+                                        <li><span class="ho-hot-pri-dis">$840</span><span class="ho-hot-pri">₹4,481</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HOTEL GRID -->
+                    <div class="col-md-4">
+                        <div class="to-ho-hotel-con">
+                            <div class="to-ho-hotel-con-1">
+                                <div class="hot-page2-hli-3"> <img src="{% static 'images/hci1.png' %}" alt=""> </div>
+                               <img src="{% static 'images/hotels/3.jpg' %}" alt=""> </div>
+                            <div class="to-ho-hotel-con-23">
+                                <div class="to-ho-hotel-con-2">
+                                    <a href="hotel-details ">
+                                        <h4>Ananta Udaipur</h4>
+                                    </a>
+                                </div>
+                                <div class="to-ho-hotel-con-3">
+                                    <ul>
+                                        <li>City: Tehsil Girwa, Kodiyat Main Rd, Udaipur, Rajasthan
+                                            <div class="dir-rat-star ho-hot-rat-star"> Rating: <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o"
+                                                    aria-hidden="true"></i> </div>
+                                        </li>
+                                        <li><span class="ho-hot-pri-dis">$680</span><span class="ho-hot-pri">₹5,602</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+   
+{% endblock body %}

@@ -1,0 +1,38 @@
+{%extends 'base.html'%}
+
+{%block body%}
+
+
+
+<body>
+{%load static%}
+    <div class="blog-login">
+        <div class="blog-login-in">
+            <form>
+                <img src="{% static 'images/logo.png' %}" alt="" />
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="first_name1" type="text" placeholder="Username" class="validate">
+                       <!-- <label for="first_name1">User Name</label>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <a class="waves-effect waves-light btn-large btn-log-in" href="index ">Submit</a>
+                    </div>
+                </div>
+                <a href="/login" class="for-pass">Login</a>
+            </form>
+        </div>
+    </div>
+
+    <!--======== SCRIPT FILES =========-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
+
+{% endblock body %}

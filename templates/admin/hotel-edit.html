@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+
+{%block body%}
+
+
+
+<body>
+{%load static%}
+
+     <div class="sb2-2">
+                <div class="sb2-2-2">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li class="active-bre"><a href="#"> Hotel Edit</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sb2-2-add-blog sb2-2-1">
+                    <h2>Edit Hotel Details</h2>
+
+
+   
+<a href="/hotel_all">Display</a>
+
+<form method="POST" action="/hotel_edit"  id="myform" enctype="multipart/form-data">
+    {% csrf_token %}
+
+     <input type="hidden" name="txt1" value="{{categories.0}}" >
+Name  <input type="text" name="txt2" value="{{categories.1}}">
+   <br/>
+    <button type="submit" >Update Data</button>
+</form>
+</div>
+
+
+{% endblock body %}

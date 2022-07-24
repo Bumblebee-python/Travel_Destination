@@ -1,0 +1,103 @@
+{%extends 'base.html'%}
+
+{%block body%}
+
+
+
+<body>
+{%load static%}
+  
+
+ 
+            
+            <div class="sb2-2">
+                <div class="sb2-2-2">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li class="active-bre"><a href="#"> Add Agency</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sb2-2-add-blog sb2-2-1">
+                    <h2>Add Agency Details</h2>
+                  
+                  
+                    
+
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="box-inn-sp">
+                                
+                                <div class="bor">
+                                    <form method="post" action='/agency_add_process'>
+                                        <div class="row">
+                                          {% csrf_token %}
+                                          <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="ID" type="text" name="txt1">
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="Name" name="txt2" type="text" >
+                                                <label for="list-title"> </label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="Password" name="txt3" type="text" >
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="Price" type="text" name="txt4" >
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="Email" type="text" name="txt5" >
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="Contact" type="text" name="txt6" >
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="Address" type="text" name="txt7" >
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="Guiddes" type="text" name="txt8" >
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="Guides Available" type="text" name="txt9" >
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="State ID" type="text" name="txt10" >
+                                                <label for="list-title"></label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <input id="list-title"  placeholder="City ID" type="text" name="txt11" >
+                                                <label for="list-title"></label>
+                                            </div>
+
+                                         </div>
+                                  
+                                     
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input type="submit" class="waves-effect waves-light btn-large" value="Submit">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            </div>
+   
+
+
+
+
+{% endblock body %}

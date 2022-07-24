@@ -1,0 +1,63 @@
+{%extends 'admnin/base.html'%}
+{%block body%}
+
+{%load static%}
+    <!--== BODY CONTNAINER ==-->
+    <div class="container-fluid sb2">
+        <div class="row">
+            
+            <div class="sb2-2">
+                <div class="sb2-2-2">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li class="active-bre"><a href="#"> Ui Form</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sb2-2-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box-inn-sp">
+                                <div class="inn-title">
+                                    <h4>All Packages</h4>
+                                </div>
+                                <div class="tab-inn">
+                                    <div class="table-responsive table-desi">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Package Price</th>
+                                                    <th>Hotel Name</th>
+                                                    <th>Agency Name</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     {% for i in mydata %}
+                                                        <tr>
+                                                            <td>{{i.0}}</td>
+                                                            <td>{{i.1}}</td>
+                                                            <td>{{i.2}}</td>
+                                                            <td>{{i.3}}</td>
+                                                            <td><a href='edit/{{i.0}}'>Edit</a> | <a href='delete/{{i.0}}'> <i class="fa fa-trash-o" aria-hidden="true"></i> </a> </td>
+                                                        </tr>
+                                                        {% endfor %}
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+{% endblock body %}
